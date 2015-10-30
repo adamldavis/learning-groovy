@@ -1,5 +1,6 @@
 .gradle
 build/
-
+*~
+*.zip
 # Ignore Gradle GUI config
 gradle-app.setting
