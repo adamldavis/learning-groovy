@@ -16,3 +16,20 @@ For a more advanced DSL see [GrooCSS](https://github.com/adamldavis/groocss).
 Contains a simple ratpack 1.4 application created by [lazybones](https://github.com/pledbrook/lazybones).
 
 
+## Acknowledgments
+
+In my haste to acknowledge the talented developers of Groovy-related open-source projects, I made some mistakes and missed some people for which I'm sorry.
+
+The actual creator of Spock is [Peter Niederwieser](https://github.com/pniederw).
+
+The lead of Ratpack is [Luke Daley](https://github.com/alkemist).
+
+The main contributor to Gradle is [Adam Murdoch](https://github.com/adammurdoch).
+
+The main contributor to Grails is [Graeme Rocher](https://github.com/graemerocher).
+
+## Errata
+
+See ERRATA.md for book corrections/errors.
+
+
