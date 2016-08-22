@@ -18,7 +18,8 @@ Contains a simple ratpack 1.4 application created by [lazybones](https://github.
 
 ## Acknowledgments
 
-In my haste to acknowledge the talented developers of Groovy-related open-source projects, I made some mistakes and missed some people for which I'm sorry.
+In my haste to acknowledge some of the talented developers behind some Groovy-related open-source projects, 
+I made some mistakes and missed some people for which I'm sorry.
 
 The actual creator of Spock is [Peter Niederwieser](https://github.com/pniederw).
 
