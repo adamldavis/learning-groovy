@@ -1,9 +1,43 @@
+// Using GrooCSS Gradle without Plugin
+import org.groocss.GrooCSS
 
-dependencies {
-    compile 'org.groocss:groocss:0.6'
+buildscript {
+    repositories { jcenter() }
+    dependencies { classpath 'org.groocss:groocss:0.12' }
+}
+def cssDir = "$parent.buildDir/../ratpack-example/src/ratpack/public/styles"
+
+task css doLast {
+    GrooCSS.withConfig { noExts().compress().utf8() }.process {
+        def big = 48.px
+        body {
+            color white
+            background c(0x313131)
+        }
+        sg '#links', {
+            zIndex 17500 width '100%' margin '0 auto' listStyle 'none' padding 0
+            add 'li' {
+                display 'block' margin '10px auto'
+            }
+            add 'li:first-child', {
+                marginTop 0
+            }
+            add 'li a', {
+                fontSize big	/* 48px */
+                lineHeight big + 8.px	/* 56px */
+                fontWeight 700
+                textAlign 'center'; display 'block'; padding '25px 0'
+                textDecoration 'none'
+            }
+        }
+        li a % hover {
+            color white
+            transition { color 1.s }
+        }
+    }.writeTo file("$cssDir/main.css")
 }
 
-task printName << {
+task printName doLast {
     println "subproject1"
 }
 

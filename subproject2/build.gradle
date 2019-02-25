@@ -1,9 +1,20 @@
+// Using GrooCSS Gradle Plugin
+plugins {
+  id "org.groocss.groocss-gradle-plugin" version "0.12"
+}
+def cssDir = "$parent.buildDir/../ratpack-example/src/ratpack/public/styles"
 
-dependencies {
-    compile 'org.groocss:groocss:0.6'
+task styles(type: org.groocss.GroocssTask, dependsOn: ':subproject1:css') {
+    conf = new org.groocss.Config(compress: true, addOpera: false)
+    from 'groocss'
+    into "$cssDir"
+} doFirst {
+    assert file('groocss/index.css.groovy').exists()
+    println "cssDir = $cssDir"
+    assert new File(cssDir).isDirectory()
 }
 
-task printName << {
+task printName doLast {
     println "subproject2"
 }
 

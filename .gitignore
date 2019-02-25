@@ -4,3 +4,13 @@ build/
 *.zip
 # Ignore Gradle GUI config
 gradle-app.setting
+# Ignore IDE settings
+.settings
+.eclipse
+.idea
+*.iws
+*.ipr
+*.iml
+# ignore groocss output
+ratpack-example/src/ratpack/public/styles/
+
