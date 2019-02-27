@@ -3,7 +3,7 @@ Ratpack project template
 
 You have just created a basic Groovy Ratpack application. It doesn't do much
 at this point, but we have set you up with a standard project structure, a 
-Guice back Registry, simple home page, and Spock for writing tests (because 
+Guice backed Registry, simple home page, and Spock for writing tests (because 
 you'd be mad not to use it).
 
 In this project you get:
@@ -14,6 +14,7 @@ In this project you get:
 * Reloading enabled in build.gradle
 * A standard project structure:
 
+```
     <proj>
       |
       +- src
@@ -40,6 +41,7 @@ In this project you get:
               +- groovy
                    |
                    +- // Spock tests in here!
+```
 
 That's it! You can start the basic app with
 
