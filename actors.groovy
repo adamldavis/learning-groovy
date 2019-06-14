@@ -1,4 +1,4 @@
-@Grab(group='org.codehaus.gpars', module='gpars', version='1.2.1')
+@Grab("org.codehaus.gpars:gpars:1.2.1")
 
 import groovyx.gpars.actor.Actor
 import groovyx.gpars.actor.DefaultActor
