@@ -1,9 +1,13 @@
 
 # Learning Groovy
 
-Git repo for the leanpub book "Learning Groovy" available on [Apress](http://www.apress.com/9781484221167).
+Git repo for the book "Learning Groovy" available on [Apress](http://www.apress.com/9781484221167).
 
 Contains most of the code examples used in the book.
+
+## Grails 3
+
+The Grails 3.3.10 application is located in the "example" directory.
 
 ## Groovy DSL
 
@@ -18,10 +22,7 @@ Contains a simple ratpack 1.4 application created by [lazybones](https://github.
 
 ## Acknowledgments
 
-In my haste to acknowledge some of the talented developers behind some Groovy-related open-source projects, 
-I made some mistakes and missed some people for which I'm sorry.
-
-The actual creator of Spock is [Peter Niederwieser](https://github.com/pniederw).
+The creator of Spock is [Peter Niederwieser](https://github.com/pniederw).
 
 The lead of Ratpack is [Luke Daley](https://github.com/alkemist).
 
