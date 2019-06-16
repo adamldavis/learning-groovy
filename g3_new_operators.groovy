@@ -37,5 +37,14 @@ assert date1 !== date2
 println "date1==date2 ==> ${date1 == date2}"
 println "date1===date2 ==> ${date1 === date2}"
 
+section 'safe indexing'
+
+assert null?[0] == null
+def array = ['foo', 'bar']
+assert array?[0] == 'foo'
+println array?[1]
+array = null
+println array?[1]
+
 section "end"
 
